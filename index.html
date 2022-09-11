@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <style>
+    /* *{font-family: 'Josefin Sans', sans-serif;} */
+    header{
+      background-image: url('./images/desktop/image-hero.jpg');
+
+    }
+    @media only screen and (max-width: 1024px) {
+      header{
+      background-image: url('./images/mobile/image-hero.jpg');
+    }
+    nav ul{
+      position: absolute;
+      width: 100vw;
+      transition: left 0.6s ease-out;
+      height: 75vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding-left: 20%;
+      box-sizing: border-box;
+      flex-direction: column;
+      top: 3.5rem;
+      left: 0px;
+    }
+    .lBig{
+      position: absolute;
+      top: 3.5rem;
+      left: -999px;
+    }
+    .logo{
+      position: absolute;
+      left: 30px;
+      top: 20px;
+      max-width: 40vw;
+      
+    }
+    .burger{
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      max-width: 40vw;
+    }
+    }
+    @media only screen and (max-width: 768px) {
+       nav ul{
+        width: 50vw;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="w-screen h-[80vh] bg-no-repeat bg-cover bg-center bg-fixed">
+<nav class="w-full h-20 flex justify-around items-center ">
+  <img src="./images/logo.svg" alt="" class="logo">
+  <ul id="navul" class="lg:flex lBig lg:static lg:flex-row lg:justify-center lg:items-center lg:gap-6 text-white sm:text-lg font-semibold">
+    <li class="hover:underline hover:font-bold"> <a href="#">About</a> </li>
+    <li class="hover:underline hover:font-bold"> <a href="#">Career</a> </li>
+    <li class="hover:underline hover:font-bold"> <a href="#">Events</a> </li>
+    <li class="hover:underline hover:font-bold"> <a href="#">Products</a> </li>
+    <li class="hover:underline hover:font-bold"> <a href="#">Supports</a> </li>
+  </ul>
+  <img src="./images/icon-hamburger.svg" alt="" class="burger lg:hidden">
+</nav>
+<div class="headerContent w-full h-[85%] flex justify-center items-center sm:justify-start sm:px-16 lg:px-28">
+  <div class="textdiv max-w-[25rem] h-[40%] sm:h-[60%] lg:h-[62%] sm:w-[32rem] lg:w-[40rem] xl:max-w-[70rem] border-white border-2 flex flex-col justify-around px-5 ">
+    <p class="text-3xl sm:text-6xl xl:text-7xl text-white uppercase ">Immersive</p>
+    <p class="text-3xl sm:text-6xl xl:text-7xl text-white uppercase ">experiences</p>
+    <p class="text-3xl sm:text-5xl xl:text-7xl text-white uppercase ">that deliver</p>
+  </div>
+</div>
+
+</header>
+<main class="flex flex-col justify-center items-center w-full">
+<div class="contentDiv w-[90vw] h-[80vh] sm:max-h-[35rem]  max-h-[27rem] flex flex-col justify-center items-center my-8 md:h-[45vh] md:flex-row md:max-w-[85vw] lg:max-w-[65vw] md:justify-around lg:justify-evenly md:gap-7">
+  <img class="w-[80vw] max-w-[20rem] sm:max-w-[30rem] md:min-w-[45%] " src="./images/desktop/image-interactive.jpg" alt="">
+  <div class="textbox bg-white w-[80vw] h-[40%] max-w-[22rem] sm:max-w-[30rem]  my-5 flex flex-col justify-center items-center gap-2 md:min-w-[30%]">
+<h1 class="text-xl sm:text-3xl xl:text-5xl uppercase text-center md:text-left" style="font-family: 'Josefin Sans', sans-serif;">The leader in interactive VR</h1>
+<p class="leading-snug text-xs sm:text-base lg:text-lg text-center font-bold text-gray-400  md:text-left" style="font-family: 'Josefin Sans', sans-serif;"> Founded in 2011, Loopstudios has been producing world-class virtual reality 
+  projects for some of the best companies around the globe. Our award-winning 
+  creations have transformed businesses through digital experiences that bind 
+  to their brand.</p>
+  </div>
+</div>
+
+</main>
+<div class="creations w-[100vw] flex flex-col items-center mb-5" style="font-family: 'Josefin Sans', sans-serif;">
+  <div class="textflex w-full flex justify-evenly items-center">
+      <h1 class=" text-3xl"> Our creations</h1>
+      <p class="md:flex hidden my-5 text-center uppercase hover:bg-black hover:text-white px-4 py-3 border-2 border-black rounded-md transition">See more</p>
+  </div>
+
+  <div 
+  class="firstRow flex justify-center items-center gap-4 w-[100vw] h-[95vh] flex-col md:flex-row md:h-[40vh] md:mb-2 md:w-[calc(100vw-60px)] lg:w-[80vw] md:items-end ">
+   
+  </div>
+  <div 
+  class="secondRow flex justify-center items-center gap-4 w-[100vw] h-[95vh] flex-col md:flex-row md:h-[40vh] md:mb-2 md:w-[calc(100vw-60px)] lg:w-[80vw] md:items-end ">
+   
+  </div>
+  <p class="md:hidden my-5 text-center uppercase hover:bg-black hover:text-white px-4 py-3 border-2 border-black rounded-md transition">See more</p>
+</div>
+<footer class="w-screen lg:h-[25vh] h-[69vh] bg-black flex lg:flex-row flex-col justify-center lg:justify-around items-center">
+<div class="left lg:w-[30%] lg:h-full w-full h-[55%] flex flex-col justify-center items-center lg:items-start gap-5">
+<img src="./images/logo.svg" alt="">
+<ul class=" flex justify-center items-center lg:gap-6 gap-3 lg:flex-row flex-col ">
+  <li class="text-white hover:font-bold"> <a href="#">About</a> </li>
+  <li class="text-white hover:font-bold"> <a href="#">Career</a> </li>
+  <li class="text-white hover:font-bold"> <a href="#">Events</a> </li>
+  <li class="text-white hover:font-bold"> <a href="#">Products</a> </li>
+  <li class="text-white hover:font-bold"> <a href="#">Supports</a> </li>
+</ul>
+</div>
+<div class="right lg:w-[30%] lg:h-full w-full h-1/2 flex flex-col justify-center items-center lg:items-center gap-5">
+  <ul class=" flex justify-center items-center gap-6">
+  <li>  <img src="./images/icon-facebook.svg" alt=""></li>
+  <li>  <img src="./images/icon-twitter.svg" alt=""></li>
+  <li>  <img src="./images/icon-pinterest.svg" alt=""></li>
+  <li>  <img src="./images/icon-instagram.svg" alt=""></li>
+  </ul>
+  <p class="text-gray-400">
+    © 2021 Loopstudios. All rights reserved.
+  </p>
+</div>
+</footer>
+<script>
+  burger= document.querySelector('.burger')
+  burger.onclick = function() {
+    navul.classList.toggle('lBig')
+  }
+function frow(element , filename) {
+var xhr = new XMLHttpRequest()
+xhr.open('GET', filename , true)
+xhr.send()
+var firstRow = document.querySelector(`.${element}`)
+xhr.onload = function () {
+      var data = JSON.parse(this.responseText);
+      console.log(data);
+      for (let i = 0; i < data.length; i++) {
+        firstRow.innerHTML += `
+        <div class="card rounded-xl w-[85%] h-[20vh] sm:h-[30vh] md:w-1/4 md:h-[35vh] flex items-end bg-no-repeat bg-cover" 
+    style="background-image: url('${data[i].img}');
+    vertical-align: middle;
+    background-position: left;
+    ">
+      <h1 class="text-left px-5 text-white text-3xl">${data[i].text}</h1>
+    </div>`
+      }
+      }}
+  frow("firstRow" ,"data.json")
+  frow("secondRow" ,"data2.json")
+</script>
+</body>
+</html>
